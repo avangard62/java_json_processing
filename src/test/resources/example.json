@@ -1,4 +1,6 @@
 {
   "id": 18,
-  "PersonName": "AnoNimus777"
+  "PersonName": "AnoNimus777",
+  "specKey3": 456.7,
+  "extraKey": "undefined_val"
 }

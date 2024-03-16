@@ -2,6 +2,7 @@ package ru.gp;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.SneakyThrows;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import ru.gp.dto.CommonEntity;
 
@@ -15,6 +16,9 @@ public class JsonDtoTest {
         URL resource = getClass().getClassLoader().getResource("example.json");
         CommonEntity entity = om.readValue(resource, CommonEntity.class);
         System.out.println("toString: " + entity);
-        System.out.println("Serialized: " + om.writeValueAsString(entity));
+        String jsonOut = om.writeValueAsString(entity);
+        System.out.println("Serialized: " + jsonOut);
+        Assert.assertEquals(jsonOut, "{\"id\":18,\"userName\":\"AnoNimus777\",\"specKey3\":456.7,\"extraKey\":\"undefined_val\"}");
+        Assert.assertEquals(entity.getSpec().get("extraKey"), "undefined_val");
     }
 }
