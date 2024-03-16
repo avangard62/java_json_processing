@@ -5,7 +5,6 @@ import lombok.SneakyThrows;
 import org.testng.annotations.Test;
 import ru.gp.dto.CommonEntity;
 
-import java.io.File;
 import java.net.URL;
 
 public class JsonDtoTest {
