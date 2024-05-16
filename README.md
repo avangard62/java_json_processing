@@ -1,6 +1,6 @@
 # java_json_processing
 
-## JSON processing tricks at Java coding
+## 1. JSON processing tricks at Java coding
 ### With using of Jackson library
 
 All of described receipts with tests are located at this Maven project.
@@ -31,3 +31,7 @@ See at project:
 
 * src: [CommonEntity](src/main/java/ru/gp/dto/CommonEntity.java)
 * test: [JsonDtoTest](src/test/java/ru/gp/JsonDtoTest.java)
+
+## 2. Time control at TestNG tests
+[TimeChecker](src/test/java/ru/gp/TimeChecker.java) and [TimeCheckTest](src/test/java/ru/gp/TimeCheckTest.java) demonstrates
+how to get timestamp value of beginning of test method.
